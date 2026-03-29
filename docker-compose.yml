@@ -1,0 +1,9 @@
+services:
+  convite-spa:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: convite-15-anos-spa
+    ports:
+      - "8080:80"
+    restart: unless-stopped

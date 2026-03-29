@@ -1,0 +1,58 @@
+:root {
+  --bg: #fff5f8;
+  --surface: rgba(255, 251, 253, 0.9);
+  --surface-strong: #ffffff;
+  --border: rgba(205, 156, 176, 0.16);
+  --text: #6f5362;
+  --text-strong: #9c5d77;
+  --muted: #a68493;
+  --accent: #e3a7bf;
+  --accent-strong: #c97d9d;
+  --accent-soft: #f9dfe9;
+  --font-display: "Cormorant Garamond", serif;
+  --font-body: "Manrope", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  overflow-x: hidden;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.42), transparent 20%),
+    radial-gradient(circle at top left, rgba(249, 214, 228, 0.52), transparent 24%),
+    radial-gradient(circle at bottom right, rgba(240, 197, 216, 0.34), transparent 22%),
+    var(--bg);
+  color: var(--text);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 12px;
+  border-radius: 22px;
+  border: 1px solid rgba(214, 173, 190, 0.26);
+  pointer-events: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
